@@ -1,0 +1,47 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "@typescript-eslint/naming-convention": [
+            "warn",
+            {
+                "selector": "import",
+                "format": [
+                    "camelCase",
+                    "PascalCase"
+                ]
+            }
+        ],
+        "@typescript-eslint/semi": "off",
+        "curly": "warn",
+        "eqeqeq": "warn",
+        "no-throw-literal": "warn",
+        "semi": "off",
+        /* intra-object attr seperator */
+        // "@typescript-eslint/member-delimiter-style": [
+        //     "warn",
+        //     {
+        //         "multiline": {
+        //             "delimiter": "semi",
+        //             "requireLast": false
+        //         },
+        //         "singleline": {
+        //             "delimiter": "semi",
+        //             "requireLast": false
+        //         }
+        //     }
+        // ]
+    },
+    "ignorePatterns": [
+        "out",
+        "dist",
+        "**/*.d.ts"
+    ]
+}
